@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <title>Portofolio</title>
+  </head>
+  <body>
+    <div class="navigation">
+      <input type="checkbox" id="check">
+      <nav class="sidebar">
+        <ul class="navigation_list">
+          <li class="navigation_item">
+            <a href="#section-about" class="navigation_link">
+              <span>About Me</span>
+            </a>
+          </li>
+          <li class="navigation_item">
+            <a href="#section-skills" class="navigation_link">
+              <span>Skills</span>
+            </a>
+          </li>
+          <li class="navigation_item">
+            <a href="#section-portofolio" class="navigation_link">
+              <span>Projects</span>
+            </a>
+          </li>
+          <li class="navigation_item">
+            <a href="#section-contact"class="navigation_link">
+              <span>Contact Me</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <header>
+      <h1 class="header_title">
+        <span>Abdullah Azzam</span>
+      </h1>
+      <nav class="navigation_nav">
+        <ul class="nav_list">
+          <li class="nav_item">
+            <a href="#section-about" class="nav_link">
+              <span>About Me</span>
+            </a>
+          </li>
+          <li class="nav_item">
+            <a href="#section-skills" class="nav_link">
+              <span>Skills</span>
+            </a>
+          </li>
+          <li class="nav_item">
+            <a href="#section-portofolio" class="nav_link">
+              <span>Projects</span>
+            </a>
+          </li>
+          <li class="nav_item">
+            <a href="#section-contact"class="nav_link">
+              <span>Contact Me</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <label for="check" class="mobile-menu"><i class="fa fa-bars menu-icon fa"></i> Menu</label>
+    </header>
+
+    <section class="banner">
+      <div class="container">
+        <div class="banner-left">
+          <img src="images/pic01.png">
+          <h2>Hai... <br>
+              Saya adalah seorang <span class="efek"></span>
+          </h2>
+          <p>Selamat datang di website portofolio saya</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="section-about">
+      <div class="about">
+        <h3>About</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti sequi natus facilis inventore suscipit ad, molestiae molestias a laboriosam fugit voluptates harum temporibus et veniam ullam quos vel repellat ipsam.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti sequi natus facilis inventore suscipit ad, molestiae molestias a laboriosam fugit voluptates harum temporibus et veniam ullam quos vel repellat ipsam.</p>
+      </div>
+    </section>
+
+    <section id="section-skills">
+      <div class="skills">
+        <h3>Skills</h3>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>REACT</li>
+          <li>JAVASCRIPT</li>
+          <li>REACT NATIVE</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="section-portofolio">
+      <div class="container">
+        <h3>Portofolio</h3>
+
+        <div class="col-4">
+          <span>Portfolio 3</span>
+          <div class="cards" onclick="flip(event)">           
+            <div class="depan">
+              <img src="pic02.png">
+            </div>
+            <div class="belaka">
+              <img src="pic02.gif">
+            </div>
+          </div>
+          <a href="" class="btn btn-code">source code</a>
+        </div>
+  
+        <div class="col-4">
+          <span>Portfolio 3</span>
+          <div class="cards" onclick="flip(event)">           
+            <div class="depan">
+              <img src="pic02.png">
+            </div>
+            <div class="belaka">
+              <img src="pic02.gif">
+            </div>
+          </div>
+          <a href="" class="btn btn-code">source code</a>
+        </div>
+  
+        <div class="col-4">
+          <span>Portfolio 3</span>
+          <div class="cards" onclick="flip(event)">           
+            <div class="depan">
+              <img src="pic02.png">
+            </div>
+            <div class="belaka">
+              <img src="pic02.gif">
+            </div>
+          </div>
+          <a href="" class="btn btn-code">source code</a>
+        </div>
+
+        <div class="col-4">
+          <span>Portfolio 3</span>
+          <div class="cards" onclick="flip(event)">           
+            <div class="depan">
+              <img src="pic02.png">
+            </div>
+            <div class="belaka">
+              <img src="pic02.gif">
+            </div>
+          </div>
+          <a href="" class="btn btn-code">source code</a>
+        </div>
+
+        <!-- <div class="box1">
+          <video   preload="auto" autoplay loop muted="muted" volume="0"> 
+            <source src="pic02.mp4" type="video/mp4"> 
+          </video>
+        </div> -->
+
+      </div>
+    </section>
+
+    <section id="section-contact">
+      <div class="container">
+        <h3>Contact</h3>
+
+        <div class="col-3">
+          <h4>Alamat</h4>
+          <p>Komp.Timah</p>
+        </div>
+
+        <div class="col-3">
+          <h4>Email</h4>
+          <p>abdullahazzam24@gmail.com</p>
+        </div>
+
+        <div class="col-3">
+          <h4>Telpon/Hp</h4>
+          <p>081318313420</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <small>Copyright &copy; 2020 - Abdullah Azzam.</small>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
