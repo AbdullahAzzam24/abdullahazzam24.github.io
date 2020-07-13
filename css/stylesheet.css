@@ -131,7 +131,7 @@ header label {
 .mobile-menu {
   float: right;
   display: none;
-  padding: 18px;
+  padding: 18px 30px;
 }
 
 .mobile-menu:hover {
@@ -221,8 +221,10 @@ section h3::after {
   padding-bottom: 120px;
 }
 
-#section-skills, #contact {
-  background-color: #f9f9f9;
+#section-skills, #section-contact {
+  /* background-color: #f9f9f9; */
+  background-image:url("../images/bg.jpg");
+  color: white;
 }
 
 #section-skills {
@@ -234,6 +236,21 @@ section h3::after {
 
 .skills {
   transform: skewY(5deg);
+}
+
+/* .skill-container {
+  display: inline;
+} */
+
+.skill-list li {
+  /* float: right; */
+  list-style: none;
+  display: inline-block;
+  padding: 0 20px ;
+}
+
+.skill-list i {
+  font-size: 70px;
 }
 
 .col-4 {
