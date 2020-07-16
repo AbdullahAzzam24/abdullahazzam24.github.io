@@ -76,9 +76,8 @@ header {
 
 .header_title {
   float: left;
-  /* margin: 9px 20px; */
   text-transform: uppercase;
-  padding: 10px;
+  padding: 10px 5px;
   height: 70px;
 }
 
@@ -148,7 +147,6 @@ section {
   background-image:url("../images/bg.jpg");
   padding-top: 100px;
   padding-bottom: 100px;
-  /* border: 1px solid #CCC; */
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
   height: 100%;
 }
@@ -173,20 +171,19 @@ section {
 }
 
 .banner-left {
-  /* margin: 0 50px;  */
   padding-left: 30px;
 }
 
 /* section style */
 
-section h3 {
+section h2 {
   padding-bottom: 20px;
   text-align: center;
   margin: 20px;
   position: relative;
 }
 
-section h3::before {
+section h2::before {
   content: '';
   display: block;
   position: absolute;
@@ -197,7 +194,7 @@ section h3::before {
   left: calc(50% - 60px);
 }
 
-section h3::after {
+section h2::after {
   content: '';
   display: block;
   position: absolute;
@@ -222,7 +219,6 @@ section h3::after {
 }
 
 #section-skills, #section-contact {
-  /* background-color: #f9f9f9; */
   background-image:url("../images/bg.jpg");
   color: white;
 }
@@ -238,19 +234,22 @@ section h3::after {
   transform: skewY(5deg);
 }
 
-/* .skill-container {
-  display: inline;
-} */
-
-.skill-list li {
-  /* float: right; */
-  list-style: none;
-  display: inline-block;
-  padding: 0 20px ;
+.skill-list {
+  padding: 0 200px;
 }
 
-.skill-list i {
+.skill-list li {
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  list-style: none;
+  display: inline-block;
+  padding-top: 10px;
+}
+
+.skill-list .fab {
   font-size: 70px;
+  padding-top: 20px;
 }
 
 .col-4 {
@@ -258,10 +257,16 @@ section h3::after {
   float: left;
   text-align: center;
   margin-bottom: 25px;
-  /* border: 1px solid #CCC; */
   margin: 0 auto;
   padding-bottom: 20px;
   padding-top: 20px;
+}
+
+.col-4 p {
+  text-align: justify;
+  margin-bottom: 20px;
+  padding: 0 20px;
+  text-indent: 25px;
 }
 
 .col-4 a:hover {
@@ -271,6 +276,10 @@ section h3::after {
 
 .cards {
   transition: transform 1s;
+  -o-transition: transform 1s;
+  -ms-transition: transform 1s;
+  -moz-transition: transform 1s;
+  -webkit-transition: transform 1s;
   transform-style: preserve-3d;
   cursor: pointer;
   position: relative;
@@ -287,6 +296,7 @@ section h3::after {
   align-items: center;
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
   font-weight: bold;
   font-size: 20px;
   width: 100%;
@@ -323,8 +333,11 @@ section h3::after {
   top: 0;
   left: 0;
   z-index: -1;
-  -webkit-transition: all .4s;
   transition: all .4s;
+  -o-transition: all .4s;
+  -ms-transition: all .4s;
+  -moz-transition: all .4s;
+  -webkit-transition: all .4s;
 }
 
 .btn-code {
@@ -333,12 +346,16 @@ section h3::after {
   padding: 12px 32px;
   color: #2c3e50;
   font-size: 18px;
-  transition: all .2s;
   border: none;
   border-radius: 16px;
   position: relative;
   animation: moveInBottom .5s ease-out.75s;
   animation-fill-mode: backwards;
+  transition: all .2s;
+  -o-transition: all .2s;
+  -ms-transition: all .2s;
+  -moz-transition: all .2s;
+  -webkit-transition: all .2s;
 }
 
 .btn-code::after {
@@ -358,6 +375,40 @@ section h3::after {
   border-bottom: 1px solid #ddd;
   margin-bottom: 15px;
 }
+
+.icons {
+  list-style-type: none;
+}
+
+.icons li {
+  display: inline-block;
+}
+
+.icon {
+  margin: 5px 2px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+}
+
+.icon:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+/* .fa-linkedin {
+  background: #007bb5;
+  color: white;
+} */
 
 footer {
   background-color: #333;
@@ -441,6 +492,10 @@ footer small {
     padding-top: 30px;
     padding-bottom: 30px;
     transform: skewY(-5deg);
+  }
+
+  .skill-list {
+    padding: 0 30px;
   }
 
   .col-4 {

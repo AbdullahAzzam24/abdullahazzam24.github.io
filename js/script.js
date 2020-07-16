@@ -13,7 +13,7 @@ let words = '';
   currentText = textElement[count];
 
   words = currentText.slice(0, ++textIndex);
-  document.querySelector('.efek').textContent = words;
+  document.querySelector('.efect').textContent = words;
 
   if(words.length == currentText.length){
     count++;
@@ -35,15 +35,3 @@ function flip(event){
     }
   }
 };
-
-// function flip(event){
-// 	var element = event.currentTarget;
-// 	if (element.className === "col-4") {
-//     if(element.style.transform == "rotateY(180deg)") {
-//       element.style.transform = "rotateY(0deg)";
-//     }
-//     else {
-//       element.style.transform = "rotateY(180deg)";
-//     }
-//   }
-// };

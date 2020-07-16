@@ -4,9 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
-    <title>Portofolio</title>
+    <title>Portfolio</title>
   </head>
   <body>
     <div class="navigation">
@@ -30,7 +31,7 @@
           </li>
           <li class="navigation_item">
             <a href="#section-contact"class="navigation_link">
-              <span>Contact Me</span>
+              <span>Contact</span>
             </a>
           </li>
         </ul>
@@ -60,41 +61,42 @@
           </li>
           <li class="nav_item">
             <a href="#section-contact"class="nav_link">
-              <span>Contact Me</span>
+              <span>Contact</span>
             </a>
           </li>
         </ul>
       </nav>
 
-      <label for="check" class="mobile-menu"><i class="fa fa-bars menu-icon fa"></i></label>
+      <label for="check" class="mobile-menu"><i class="fa fa-bars"></i></label>
     </header>
 
     <section class="banner">
       <div class="container">
         <div class="banner-left">
           <img src="images/pic01.png">
-          <h2>Hai... <br>
-              Saya adalah seorang <span class="efek"></span>
+          <h2>Hi... <br>
+              Saya adalah seorang <span class="efect"></span>
           </h2>
-          <p>Selamat datang di website portofolio saya</p>
+          <p>with passion for learning</p> <br>
+          <p>And Welcome to my Portfolio website</p>
         </div>
       </div>
     </section>
 
     <section id="section-about">
       <div class="about">
-        <h3>About</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti sequi natus facilis inventore suscipit ad, molestiae molestias a laboriosam fugit voluptates harum temporibus et veniam ullam quos vel repellat ipsam.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti sequi natus facilis inventore suscipit ad, molestiae molestias a laboriosam fugit voluptates harum temporibus et veniam ullam quos vel repellat ipsam.</p>
+        <h2>About</h2>
+        <p>I create some applications with react native <br />
+          framework from learning at udemy online course.</p>
       </div>
     </section>
 
     <section id="section-skills">
       <div class="skills">
-        <h3>Skills</h3>
+        <h2>Skills</h2>
         <div class="skill-container">
           <ul class="skill-list">
-            <li><span>HTML</span></br><i class="fab fa-html5 fa-x3"></i></li>
+            <li><span>HTML</span></br><i class="fab fa-html5"></i></li>
             <li><span>CSS</span></br><i class="fab fa-css3-alt"></i></li>
             <li><span>REACT</span></br><i class="fab fa-react"></i></li>
             <li><span>JAVASCRIPT</span></br><i class="fab fa-js"></i></li>
@@ -106,77 +108,118 @@
 
     <section id="section-portofolio">
       <div class="container">
-        <h3>Portofolio</h3>
+        <h2>Projects</h2>
+
+        <p>These Are Some My Projects</p>
 
         <div class="col-4">
-          <span>Portfolio 3</span>
-          <div class="cards" onclick="flip(event)">           
+          <h3>Music Album Application</h3>
+          <div class="cards" onclick="flip(event)">
             <div class="depan">
-              <img src="pic02.png">
+              <img src="images/pic02.png">
             </div>
             <div class="belaka">
-              <img src="pic02.gif">
+              <video width="240" height="430" preload="auto" autoplay loop muted="muted" volume="0">
+                <source src="videos/vid-01.mp4" type="video/mp4">
+              </video>
             </div>
           </div>
-          <a href="" class="btn btn-code">source code</a>
+          <p>This application is for showing music album list and then the user can buy the album from amazon website by click the button.</p>
+          <a href="https://github.com/AbdullahAzzam24/react-native-projects/tree/master/albums" target="_blank" class="btn btn-code">Source Code</a>
         </div>
   
         <div class="col-4">
-          <span>Portfolio 3</span>
-          <div class="cards" onclick="flip(event)">           
+          <h3>Topic List Application</h3>
+          <div class="cards" onclick="flip(event)">
             <div class="depan">
-              <img src="pic02.png">
+              <img src="images/pic03.png">
             </div>
             <div class="belaka">
-              <img src="pic02.gif">
+              <video width="240" height="430" preload="auto" autoplay loop muted="muted" volume="0">
+                <source src="videos/vid-02.mp4" type="video/mp4">
+              </video>
             </div>
           </div>
-          <a href="" class="btn btn-code">source code</a>
+          <p>This application is to show a list of some topics, and when the user tap a topic the detail of the topic will show with pop up animation.</p>
+          <a href="https://github.com/AbdullahAzzam24/react-native-projects/tree/master/tech_stack" class="btn btn-code">Source Code</a>
         </div>
   
         <div class="col-4">
-          <span>Portfolio 3</span>
-          <div class="cards" onclick="flip(event)">           
+          <h3>Basic User Login Form Application</h3>
+          <div class="cards" onclick="flip(event)">
             <div class="depan">
-              <img src="pic02.png">
+              <img src="images/pic04.png">
             </div>
             <div class="belaka">
-              <img src="pic02.gif">
+              <video width="240" height="430" preload="auto" autoplay loop muted="muted" volume="0">
+                <source src="videos/vid-03.mp4" type="video/mp4">
+              </video>
             </div>
           </div>
-          <a href="" class="btn btn-code">source code</a>
+          <p>
+            This application is the basic login form for user.
+            This application connected to firebase authentication,
+            the system will automaticly sign up user when user 
+            click the button.
+          </p>
+
+          <p>
+            If the user typed the wrong password, the error message
+            will show on the screen.
+          </p>
+          <a href="https://github.com/AbdullahAzzam24/react-native-projects/tree/master/auth" class="btn btn-code">Source Code</a>
         </div>
 
         <div class="col-4">
-          <span>Portfolio 3</span>
-          <div class="cards" onclick="flip(event)">           
+          <h3>Employee Manage Application</h3>
+          <div class="cards" onclick="flip(event)">
             <div class="depan">
-              <img src="pic02.png">
+              <img src="images/pic05.png">
             </div>
             <div class="belaka">
-              <img src="pic02.gif">
+              <video width="240" height="430" preload="auto" autoplay loop muted="muted" volume="0">
+                <source src="videos/vid-04.mp4" type="video/mp4">
+              </video>
             </div>
           </div>
-          <a href="" class="btn btn-code">source code</a>
+          <p> 
+            This application for manager in the corporate, 
+            this for maintain internal employee. The manager 
+            account added from the firebase authentication. 
+          </p>
+
+          <p>
+            The manager can add some employees by click 
+            add button and fill the employe form, the employee 
+            list will show after click save button. 
+          </p>
+
+          <p>
+            The manager can edit the employee by click one 
+            employee of the list. After choose the employee, 
+            the manager can edit shift and phone number. 
+          </p>
+
+          <p>
+            The manager can edit the employee by click one 
+            employee of the list. After choose the employee, 
+            the manager can edit shift and phone number. 
+          </p>
+
+          <p>
+            The manager can send a message to the employee 
+            after change the shift by click the Text Schedule 
+            button. The manager can fire the employee if don't 
+            satisfied with the employee by click Fire Employee button.
+          </p>
+          <a href="https://github.com/AbdullahAzzam24/react-native-projects/tree/master/manager" class="btn btn-code">Source Code</a>
         </div>
-
-        <!-- <div class="box1">
-          <video   preload="auto" autoplay loop muted="muted" volume="0"> 
-            <source src="pic02.mp4" type="video/mp4"> 
-          </video>
-        </div> -->
-
       </div>
     </section>
 
     <section id="section-contact">
       <div class="container">
-        <h3>Contact</h3>
-
-        <div class="col-3">
-          <h4>Alamat</h4>
-          <p>Komp.Timah</p>
-        </div>
+        <h2>Contact</h2>
 
         <div class="col-3">
           <h4>Email</h4>
@@ -184,8 +227,31 @@
         </div>
 
         <div class="col-3">
-          <h4>Telpon/Hp</h4>
-          <p>081318313420</p>
+          <h4>Phone</h4>
+          <p>+6281318313420</p>
+        </div>
+
+        <div class="col-3">
+          <h4>Social</h4>
+            <ul class="icons">
+              <li>
+                <a href="https://www.linkedin.com/in/abdullah-azzam-286a67195" target="_blank">
+                  <i class="fab fa-3x fa-linkedin-square icon" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/AbdullahAzzam24" target="_blank">
+                  <i class="fab fa-3x fa-github-square"></i>
+                  <!-- aria-hidden="true" -->
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/abdullah-azzam-286a67195">
+                  <i class="fab fa-linkedin-square"></i>
+                  <!-- aria-hidden="true" -->
+                </a>
+              </li>
+            </ul>
         </div>
       </div>
     </section>
