@@ -76,9 +76,9 @@ header {
 
 .header_title {
   float: left;
-  text-transform: uppercase;
-  padding: 10px 5px;
+  padding: 10px 20px;
   height: 70px;
+  font-size: 40px;
 }
 
 .navigation_nav {
@@ -130,7 +130,9 @@ header label {
 .mobile-menu {
   float: right;
   display: none;
-  padding: 18px 30px;
+  padding: 20px 20px;
+  height: 70px;
+  font-size: 30px;
 }
 
 .mobile-menu:hover {
@@ -147,6 +149,7 @@ section {
   background-image:url("../images/bg.jpg");
   padding-top: 100px;
   padding-bottom: 100px;
+  padding-left: 300px;
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
   height: 100%;
 }
@@ -158,16 +161,12 @@ section {
   margin-bottom: 10px;
 }
 
-.banner h2, .banner p, .banner span{
+.banner h2, .banner span{
   color: #fff;
 }
 
 .banner h2 {
   margin-bottom: 10px;
-}
-
-.banner p {
-  font-size: 18px;
 }
 
 .banner-left {
@@ -205,11 +204,11 @@ section h2::after {
   left: calc(50% - 20px);
 }
 
-#about p {
+p {
   text-align: justify;
-  text-indent: 30px;
-  line-height: 25px;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
+  padding: 0 20px;
+  text-indent: 25px;
 }
 
 #section-about {
@@ -260,18 +259,6 @@ section h2::after {
   margin: 0 auto;
   padding-bottom: 20px;
   padding-top: 20px;
-}
-
-.col-4 p {
-  text-align: justify;
-  margin-bottom: 20px;
-  padding: 0 20px;
-  text-indent: 25px;
-}
-
-.col-4 a:hover {
-  background: #2c3e50;
-  color: white;
 }
 
 .cards {
@@ -341,7 +328,7 @@ section h2::after {
 }
 
 .btn-code {
-  background-color: burlywood;
+  background-color: white;
   display: inline-block;
   padding: 12px 32px;
   color: #2c3e50;
@@ -358,8 +345,8 @@ section h2::after {
   -webkit-transition: all .2s;
 }
 
-.btn-code::after {
-  background-color: chartreuse;
+.btn-code:hover {
+  color: rgb(0, 195, 255);
 }
 
 .col-3 {
@@ -382,11 +369,12 @@ section h2::after {
 
 .icons li {
   display: inline-block;
+  border-radius: 50%;
 }
 
 .icon {
   margin: 5px 2px;
-  border-radius: 50%;
+  /* border-radius: 50%; */
   width: 50px;
   height: 50px;
   line-height: 50px;
@@ -464,8 +452,17 @@ footer small {
     padding: 0;
   }
 
+  /* .header_title {
+    float: left;
+    text-transform: uppercase;
+    padding: 20px 10px;
+    height: 70px;
+    font-size: 30px;
+  } */
+
   .banner {
     clip-path: polygon(0 0, 100% 0, 100% 93%, 0 100%);
+    padding-left: 100px;
   }
 
   .banner-left {
