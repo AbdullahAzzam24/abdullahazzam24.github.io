@@ -58,10 +58,6 @@ body {
   text-transform: uppercase;
 }
 
-#check:checked ~ .sidebar {
-  left: 0;
-}
-
 /* header style */
 
 header {
@@ -234,21 +230,18 @@ p {
 }
 
 .skill-list {
-  padding: 0 200px;
+  text-align: center;
+}
+
+.skill-container {
+  padding: 0;
 }
 
 .skill-list li {
-  width: 150px;
-  height: 150px;
+  display: inline-block;
   text-align: center;
   list-style: none;
-  display: inline-block;
-  padding-top: 10px;
-}
-
-.skill-list .fab {
-  font-size: 70px;
-  padding-top: 20px;
+  margin: 10px;
 }
 
 .col-4 {
@@ -259,6 +252,8 @@ p {
   margin: 0 auto;
   padding-bottom: 20px;
   padding-top: 20px;
+  border-radius: 8px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
 }
 
 .cards {
@@ -310,6 +305,43 @@ p {
   box-shadow: 0px 0px 20px 1px #000;
 }
 
+#show-more-1 {
+  display: none;
+}
+
+#show-more-2 {
+  display: none;
+}
+
+.show-less {
+  font-size: 15px;
+  line-height: 20px;
+  height: 90px;
+  overflow: hidden;
+}
+
+.detailApp a {
+  display: inline-block;
+  color: #fff;
+  background-color: #2196f3;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+.detailApp a:hover {
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.detailApp.showContent .show-less {
+  height: auto;
+}
+
+.detailApp.showContent a.myBtn {
+  background-color: red;
+}
+
 .btn-after {
   content: "";
   display: inline-block;
@@ -357,10 +389,15 @@ p {
   padding: 30px 10px;
 }
 
-.col-3 h4 {
+.col-3 h3 {
   padding-bottom: 10px;
   border-bottom: 1px solid #ddd;
   margin-bottom: 15px;
+}
+
+.col-3 p {
+  text-align: center;
+  text-indent: 0;
 }
 
 .icons {
@@ -374,7 +411,6 @@ p {
 
 .icon {
   margin: 5px 2px;
-  /* border-radius: 50%; */
   width: 50px;
   height: 50px;
   line-height: 50px;
@@ -452,14 +488,6 @@ footer small {
     padding: 0;
   }
 
-  /* .header_title {
-    float: left;
-    text-transform: uppercase;
-    padding: 20px 10px;
-    height: 70px;
-    font-size: 30px;
-  } */
-
   .banner {
     clip-path: polygon(0 0, 100% 0, 100% 93%, 0 100%);
     padding-left: 100px;
@@ -472,6 +500,10 @@ footer small {
 
   .mobile-menu {
     display: block;
+  }
+
+  #check:checked ~ .sidebar {
+    left: 0;
   }
 
   .nav_list {
@@ -489,10 +521,6 @@ footer small {
     padding-top: 30px;
     padding-bottom: 30px;
     transform: skewY(-5deg);
-  }
-
-  .skill-list {
-    padding: 0 30px;
   }
 
   .col-4 {
