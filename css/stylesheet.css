@@ -27,35 +27,44 @@ body {
   position: fixed;
   top: 0;
   bottom: 0;
-  left: -250px;
+  right: -250px;
   width: 250px;
-  background-color: rgba(255, 255, 255, 0.9);
-  transition: .3s;
-  z-index: 9999;
+  z-index: 11;
+  background: #042331;
+  transition: all .5s ease;
+}
+
+.head {
+  font-size: 22px;
+  text-align: center;
+  line-height: 70px;
+  background: #063146;
+  color: white;
+  user-select: none;
 }
 
 .navigation_list {
-  padding-top: 60px;
   list-style: none;
 }
 
-.navigation_item {
-  padding-left: 30px;
-  transition: .3s;
-  transition-property: background-color;
-}
-
-.navigation_item:hover {
-  background-color: #64FAF4 ;
-}
-
 .navigation_link {
-  color: #1e252d;
-  padding: 20px 0;
+  color: white;
   font-size: 15px;
+  font-weight: bold;
   display: block;
-  border-bottom: 0;
+  height: 100%;
+  width: 100%;
   text-transform: uppercase;
+  line-height: 65px;
+  padding-left: 30px;
+  box-sizing: border-box;
+  border-top: 1px solid rgba(255, 255, 255, .1);
+  border-bottom: 1px solid black;
+  transition: .3s;
+}
+
+.navigation_link:hover {
+  padding-left: 40px;
 }
 
 /* header style */
@@ -123,20 +132,37 @@ header label {
   clear: both;
 }
 
-.mobile-menu {
-  float: right;
-  display: none;
-  padding: 20px 20px;
-  height: 70px;
-  font-size: 30px;
-}
-
-.mobile-menu:hover {
-  cursor: pointer;
-}
-
 section {
   padding: 0 50px;
+}
+
+/* mobile-menu */
+
+#mobile-menu, #mobile-cancel {
+  cursor: pointer;
+  background: #042331;
+  border-radius: 3px;
+}
+
+#mobile-menu {
+  position: fixed;
+  left: 100px;
+  top: 15px;
+  font-size: 35px;
+  color: white;
+  padding: 6px 12px;
+  transition: all .5s;
+  display: none;
+}
+
+#mobile-cancel {
+  position: absolute;
+  left: 195px;
+  top: 17px;
+  font-size: 30px;
+  color: #0a5275;
+  padding: 4px 9px;
+  transition: all .5s ease;
 }
 
 /* banner style */
@@ -165,8 +191,6 @@ section {
 .banner h2 {
   display: block;
   margin-bottom: 10px;
-  /* margin-left: auto;
-  margin-right: auto; */
   text-align: center;
 }
 
@@ -431,6 +455,12 @@ footer small {
 @media (max-width: 760px) {
   header {
     padding: 0;
+    display: none;
+  }
+
+  #mobile-menu {
+    display: block;
+    z-index: 10;
   }
 
   .banner {
@@ -449,6 +479,12 @@ footer small {
 
   #check:checked ~ .sidebar {
     left: 0;
+  }
+
+  #check:checked ~ #mobile-menu {
+    right: 250px;
+    opacity: 0;
+    pointer-events: none;
   }
 
   .nav_list {
@@ -478,7 +514,11 @@ footer small {
   }
 
   .col-3 {
-    padding: 30px 10px;
+    padding: 30px 0;
+  }
+
+  .col-3 p {
+    padding: 0;
   }
 
 }
