@@ -36,11 +36,14 @@ body {
 
 .head {
   font-size: 22px;
-  text-align: center;
   line-height: 70px;
   background: #063146;
   color: white;
   user-select: none;
+}
+
+.head h3 {
+  padding-left: 30px;
 }
 
 .navigation_list {
