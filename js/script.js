@@ -4,7 +4,7 @@ let textIndex = 0;
 let currentText = '';
 let words = '';
 
-(function ngetik() {
+(function typing() {
 
   if(count == textElement.length){
     count = 0;
@@ -20,7 +20,7 @@ let words = '';
     textIndex = 0;
   }
 
-  setTimeout(ngetik, 500);
+  setTimeout(typing, 500);
 
 })();
 
