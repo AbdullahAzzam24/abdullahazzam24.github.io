@@ -75,7 +75,9 @@ body {
 header {
   height: 70px;
   width: 100%;
-  background-color: rgba(249, 254, 255, 0.9);
+  /* background-color: rgba(249, 254, 255, 0.9); */
+  background-color: #042331;
+  opacity: 0.9;
   position: fixed;
   top: 0;
   z-index: 10;
@@ -90,7 +92,7 @@ header {
 }
 
 .navigation_nav {
-  float: right;
+  padding-left: 50px;
 }
 
 .nav_list {
@@ -107,11 +109,12 @@ header {
 }
 
 .nav_item:hover {
-  background-color:  rgba(249, 254, 255);
+  background-color:  #063146;
 }
 
 .nav_link {
-  color: #1e252d;
+  /* color: #1e252d; */
+  color: white;
   padding: 20px 0;
   font-size: 15px;
   display: block;
